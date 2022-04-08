@@ -1,5 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-
-access_book_bookorder,access_book_bookorder,model_book_bookorder,base.group_user,1,1,1,1
-access_book_costumeorder,access_book_costumeorder,model_book_costumeorder,base.group_user,1,1,1,1
-access_book_customer,access_book_costumer,model_book_customer,base.group_user,1,1,1,1
