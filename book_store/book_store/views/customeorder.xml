@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- book.store tree view -->
+    <record id="book_store_view_tree" model="ir.ui.view">
+        <field name="name">Book Costume</field>
+        <field name="model">book_store</field>
+        <field name="arch" type="xml">
+            <tree>
+                <!-- Add your fields here -->
+                <field name="judul buku"/>
+                <field name="category"/>
+                <field name="harga buku"/>
+                <field name="pengarang"/>
+                <field name="jumlah"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- toko.buku action window -->
+    <record id="book_store_categ_buku_action" model="ir.actions.act_window">
+        <field name="name">Daftar Book Costume</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">book_store_book_costume</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- This Menu Item must have a parent and an action -->
+    <menuitem 
+        id="book_store_categ_buku_action" 
+        name="Book Store" 
+        parent="book_costume_p_menu_category" 
+        action="book_p_store_action" 
+        sequence="20"/>
+
+</odoo>
